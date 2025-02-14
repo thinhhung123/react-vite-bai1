@@ -2,16 +2,23 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+const MyComponent = () => {
+  return (
+    <div> Nguyễn Thành Đạt</div>
+  );
+}
 // () => {} (viết body của arrow function)
 const App = () => {
   const [count, setCount] = useState(0)
 //  function myFunction(){
 //   console.log(">>> run my function")
 //  }
-const myFunction = () =>{
-  console.log (">>> run my arrow function")
-}
-myFunction();
+//react
+// const myFunction = () =>{
+//   console.log (">>> run my arrow function")
+// }
+// myFunction();
+
   return (
     <>
       <div>
@@ -23,6 +30,7 @@ myFunction();
         </a>
       </div>
       <h1>Hello world </h1>
+      <MyComponent/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
